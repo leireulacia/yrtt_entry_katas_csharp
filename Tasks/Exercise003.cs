@@ -29,21 +29,24 @@ namespace TechReturners.Tasks
     {
         public static int[] RowWeights(int[] a)
         {
-          int row1=0;
-          int row2=0;
-            for (int i=0;i<a.Length;i++)
+            int row1 = 0;
+            int row2 = 0;
+            for (int i = 0; i < a.Length; i++)
             {
                 //even index
-                if (i % 2 == 0) {
-                  row1+=a[i];
+                if (i % 2 == 0)
+                {
+                    row1 += a[i];
 
-                } else {
-                  //odd index
-                  row2+=a[i];
+                }
+                else
+                {
+                    //odd index
+                    row2 += a[i];
                 }
             }
 
-            return new int[]{row1, row2};
+            return new int[] { row1, row2 };
         }
     }
 }
